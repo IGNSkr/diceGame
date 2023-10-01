@@ -52,9 +52,13 @@ function changeDiceImage2() {
   }
 }
 
-let answer = prompt("Start Game? (Y/N)");
-while (answer === "Y" || answer === "y") {
-  onload(commenceGame());
+function askForOption() {
+  let answer = prompt("Start Game? (Y/N)");
+  while (answer === "Y" || answer === "y") {
+    onload(commenceGame());
+  }
 }
+
+setTimeout(askForOption, 2000);
 
 // commenceGame();
