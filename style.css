@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  background-color: rgb(24, 1, 44);
+  color: green;
+  max-height: 100vh;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 3px 3px 4px red;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.dice_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.players h4 {
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 4px red;
+}
+
+.players img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 800px) {
+  .dice_container {
+    flex-direction: column;
+  }
+
+  p {
+    display: block;
+    width: 70vw;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .players h4 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px red;
+  }
+
+  .title {
+    text-shadow: 2px 2px 3px red;
+  }
+}
